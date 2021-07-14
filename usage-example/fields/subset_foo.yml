@@ -1,0 +1,30 @@
+---
+name: merge_foo
+fields:
+  # Project's custom fields
+  foo:
+    fields: "*"
+
+  # ECS basic fields
+  base:
+    fields: "*"
+  ecs:
+    fields: "*"
+  event:
+    fields: "*"
+
+  # web log specific fields
+  http:
+    fields: "*"
+
+  # Network fields to capture IPs, geo and stuff
+  network:
+    fields: "*"
+  related:
+    fields:
+      ip: {}
+      user: {}
+
+  # pipeline meta-data
+  agent:
+    fields: "*"

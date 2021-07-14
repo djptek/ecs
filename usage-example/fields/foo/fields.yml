@@ -1,0 +1,17 @@
+- name: foo
+  title: foo
+  description: > 
+    Adapted from `elastic-package/internal/fields/testdata/fields/fields.yml`
+  type: group
+  fields:
+    - name: code
+      type: keyword
+      level: custom
+      description: code
+    - name: flattened
+      type: group
+      level: custom
+      description: flattened
+      fields:
+        - name: request_parameters
+          type: flattened
